@@ -4,12 +4,8 @@ import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
-import Menu from "@mui/material/Menu";
-import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
-import MenuItem from "@mui/material/MenuItem";
-import AdbIcon from "@mui/icons-material/Adb";
 import SearchAppBar from "./Search";
 import InfoIcon from "@mui/icons-material/Info";
 import DarkModeIcon from '@mui/icons-material/DarkMode';
@@ -25,7 +21,7 @@ export default function Header({ onSearch, toggleDarkMode, darkMode }) {
   
   return (
     <AppBar position="fixed" sx={{bgcolor: 'background.default', 
-	color:"text.primary", px:{ xs: 1, md: 5 }, py: 1, boxShadow: '0px 1px 4px rgba(0, 0, 0, 0.2)'}}>
+	color:"text.primary", px:{ xs: 1, md: 5 }, py: 1, boxShadow: "rgba(0, 0, 0, 0.2)"}}>
       <Container maxWidth="xl">
         <Toolbar disableGutters sx={{display: "flex", alignItems: "center", justifyContent: "space-between"}}>
         <Box sx={{display: "flex", alignItems: "center"}}>

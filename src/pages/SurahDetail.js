@@ -16,17 +16,12 @@ import Button from '@mui/material/Button';
 import Chip from '@mui/material/Chip';
 import Stack from '@mui/material/Stack';
 import DescriptionIcon from '@mui/icons-material/Description';
-import PlayArrowOutlinedIcon from '@mui/icons-material/PlayArrowOutlined';
 import PlayArrowIcon from "@mui/icons-material/PlayArrow";
-import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
-import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import TafsirModal from "../components/TafsirModal";
-import Pagination from '@mui/material/Pagination';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForwardIos';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import PauseIcon from "@mui/icons-material/Pause";
 import { useNavigate } from 'react-router-dom';
-import CircularProgress from '@mui/material/CircularProgress';
 
 export default function SurahDetail(){
  const {id} = useParams();
@@ -107,13 +102,14 @@ export default function SurahDetail(){
 	const suratSelanjutnya = surah?.suratSelanjutnya;
 	
 	return(
-	 <Box sx={{
-		pt: 5, 
-		width: {xs: "90%", md: "80%"},
-        margin: '80px auto',
-		mb: 3
-		}}>
-		
+	<Box
+	  sx={{
+		pt: 12, 
+		mb: 3,
+		width: { xs: "90%", md: "80%" },
+		mx: "auto",
+	  }}
+	>
 		  {(!surah || isLoading) ? (
 		  <Box sx={{ textAlign: "center", py: 25 }}>
 			<Typography mt={2} color={'text.primary'}>Loading…</Typography>
